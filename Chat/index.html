@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+          content="width=device-width, initial-scale=1"><!--, user-scalable=no" possibilité d'enlever le zoom-->
+    <link rel="stylesheet" type="text/css" href="Style/style.css">      
+		<title>Chattes</title>
+</head>
+<body>
+	<hr>
+	<header>
+		<p>Miaou</p>
+		<nav>
+      <ul>
+        <li class="deroulant"><a href="#1">Les plus vues</a>
+        	<ul class="sous">
+        		<li><a href="#ajd"> Aujourd'hui</a></li>
+        		<li><a href="#semaine">Cette semaine</a></li>
+        		<li><a href="#mois">Ce mois-ci</a></li>
+        	</ul>
+        </li>
+         <li class="deroulant"><a href="#2">Les mieux notées</a>
+         	<ul class="sous">
+         		<li><a href="#semainen">Cette semaine</a></li>
+         		<li><a href="#moisn">Ce mois-ci</a></li>
+         		<li><a href="#annéen">Cette année</a></li>
+         	</ul>
+         </li>	
+        <li class="deroulant"><a href="#3">Les plus récentes</a>
+        	<ul class="sous">
+        		<li><a href="age">Par âges</a></li>
+        		<li><a href="drole">Drôles</a></li>
+        		<li><a href="race">Par races</a></li>
+        	</ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>	
+        <label>
+		<li><input type="search" id="site-search" name="q"
+       			   aria-label="Search through site content" placeholder="Poils longs">
+		<button>Rechercher</button>
+		</li>
+		</label>
+        	</ul>
+    </nav>
+	</header>
+	<hr>
+	<section>
+		<h1 id="1">Les plus vues</h1>
+		<h2 id="2">Les mieux notées</h2>
+ 		<h3 id="3">Les plus récentes</h3>
+ 	</section>
+   </head>
+   <body>
+   		<script src="./Script/main.js" type="text/javascript">
+   		</script>
+   	   	<style>
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+  }
+  #popUp {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    right: 50%;
+    box-sizing: border-box;
+    width: 60%;
+    height: 250px;
+    margin-left: -30%;
+    padding: 20px;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  #popUp h1 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+</style>
+<div id="overlay"></div>
+<div id="popUp">Entrez votre age: <input id="age">
+      <button onclick='check(14)'>Vérifier</button>
+</div>
+
+</body>
+<footer></footer>
+</html>
